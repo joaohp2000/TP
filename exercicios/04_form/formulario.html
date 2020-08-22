@@ -19,14 +19,55 @@
 </head>
  
 <body>
-	<h1>Validação Visual</h1>
+	<h1>Cadastre seu Currículo</h1>
 	<form name="exemplo6">
+		<h3>1. Dados Pessoais</h3>
 		Nome..........: <input type="text" name="nome" placeholder="Informe seu nome" required /><br> 
+		Data de Nascimento <input type="date" name="nasc" required /><br>
+		Estado Civil <select name="ec" >
+			<option selected value="">Informe o estado Civil</option>
+			<option value="Solteiro">Solteiro</option>
+			<option value="Casado">Casado</option>
+			<option value="Viúvo">Viúvo</option>
+			<option value="Divorciado">Divorciado</option>
+			</select><br>
+		Sexo..... <input type="radio" name="sexo" value="male" />Masculino
+				  <input type="radio" name="sexo" value="female" />Feminino <br>
+		<h3>2. Objetivo</h3>
+		<textarea name="objetivo" cols="100" rows="5" placeholder="Digite seu objetivo" required></textarea><br>
+		<h3>3. Contato</h3>
+		Endereço......: <input type="text" name="Endereço" placeholder="Digite seuendereço" required><br>
+		Cidade/Estado......:<input type="text" name="Cidade" placeholder="Digite sua Cidade" required>/
+							<input type="text" name="Estado" placeholder="Digite sua Estado" required><br>
+		CEP.........: <input type="text"  name="CEP" required placeholder="Digite o CEP no formato 99999-99" pattern="[0-9]{5}[\-][0-9]{3}"/><br> 
+		Telefone......<input type="tel" required name="tel" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" /><br>
 		Email.........: <input type="email" name="email" required placeholder="Informe um email válido" /><br> 
-		Site..........: <input type="url" name="site" pattern="http://www.+\..+" placeholder="http://www.seusite.com"/><br>
-		Idade.........: <input type="number" size="6" name="idade" min="18" max="99" value="21" /><br> 
-		Nascimento....: <input type="date" name="nasc" required /><br>
+		Rede Social..........: <input type="url" name="facebook" pattern="http://www.+\..+" placeholder="Perfil Facebook"/><br>
+								<input type="url" name="linkedin" pattern="http://www.+\..+" placeholder="Perfil Linkedin"/><br>
+								<input type="url" name="Skype" pattern="http://www.+\..+" placeholder="Perfil Skype"/><br>
+		<h3>4. Conhecimentos</h3>
+		Linguagens de Programaçao <input type="checkbox" name="C/C++" value="C/C++"> C/C++<br>
+		<input type="checkbox" name="Java" value="Java">Java <br>
+		<input type="checkbox" name="Virtual Basic" value="VB"> Virtual Basic<br>
+		<input type="checkbox" name=".Net" value=".Net"> .Net<br>
+		<input type="checkbox" name="PHP" value="PHP">PHP <br>
+		<input type="checkbox" name="Python" value="Python"> Python<br>
+		<input type="checkbox" name="Html" value="Html"> Html<br>
+		Idiomas  Inglês <select name="Ingles" >
+				<option selected value="">Nivel</option>
+				<option value="basico">basico</option>
+				<option value="Intermediario">Intermediario</option>
+				<option value="Avançado">Avançado</option>
+				</select>|
+		Espanhol <select name="Espanhol" >
+				<option selected value="">Nivel</option>
+				<option value="basico">basico</option>
+				<option value="Intermediario">Intermediario</option>
+				<option value="Avançado">Avançado</option>
+				</select><br>
+		<input type="reset" value="Limpar" /> |
 		<input type="submit" value="Submit" />
+
 	</form>
 </body>
 
