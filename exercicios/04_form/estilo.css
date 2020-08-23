@@ -1,0 +1,110 @@
+
+* {
+    font-family: Courier New, Courier, monospace;
+}
+h3{
+    color:rgb(10, 13, 27);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.botao{
+    background:rgb(84, 114, 247);
+    color:white;
+
+}
+input:required:invalid,
+input:focus:invalid {
+    background-image: url('wrong.gif');
+    background-repeat: no-repeat;
+    background-position:right
+}
+input:required:valid {
+    background-image: url('check.png');
+    background-repeat: no-repeat;
+    background-position:right
+}
+.divNomes{
+color:white;
+display: table-cell;
+position:static;
+vertical-align: middle;
+width:250px;
+height:25px;
+background:rgb(84, 114, 247);
+left:00px;
+top:00px;
+}
+div.Objetivo{
+color:white;
+display: table-cell;
+position:static;
+vertical-align: middle;
+width:250px;
+height:90px;
+background:rgb(84, 114, 247);
+left:00px;
+top:00px;
+}
+div.Rs_Nome{
+color:white;
+display: table-cell;
+position:static;
+vertical-align: middle;
+width:250px;
+height:80px;
+background:rgb(84, 114, 247);
+
+left:00px;
+top:00px;
+}
+div.LP_nome{
+color:white;
+display: table-cell;
+position:static;
+vertical-align: middle;
+width:250px;
+height:150px;
+background:rgb(84, 114, 247);
+left:00px;
+top:00px;
+
+}
+.texto{
+position:static;
+
+}
+div.Objetivo_In{
+position:absolute;
+width:500px;
+height:90px;
+background:rgb(129, 152, 255);
+left:252px;
+top:00px;
+}
+.divInputs{
+position:absolute;
+width:500px;
+height:25px;
+background:rgb(129, 152, 255);
+left:252px;
+top:00px;
+}
+div.Rs_Input{
+position:absolute;
+width:500px;
+height:80px;
+background:rgb(129, 152, 255);
+left:252px;
+top:00px;
+}
+div.LP_Input{
+position:absolute;
+width:500px;
+height:150px;
+background:rgb(129, 152, 255);
+left:252px;
+top:00px;
+}
+.div{
+position:absolute;
+
+}

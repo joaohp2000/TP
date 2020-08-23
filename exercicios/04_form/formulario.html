@@ -4,71 +4,132 @@
 <head>
 	<meta charset="utf-8">
 	<title> Formulário </title>
-	<style>
-		* {
-			font-family: Courier New, Courier, monospace;
-		}
-		input:required:invalid,
-		input:focus:invalid {
-			background-color: red;
-		}
-		input:required:valid {
-			background-color: green;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
  
 <body>
 	<h1>Cadastre seu Currículo</h1>
-	<form name="exemplo6">
+	
+	<form name="formulario">
 		<h3>1. Dados Pessoais</h3>
-		Nome..........: <input type="text" name="nome" placeholder="Informe seu nome" required /><br> 
-		Data de Nascimento <input type="date" name="nasc" required /><br>
-		Estado Civil <select name="ec" >
-			<option selected value="">Informe o estado Civil</option>
-			<option value="Solteiro">Solteiro</option>
-			<option value="Casado">Casado</option>
-			<option value="Viúvo">Viúvo</option>
-			<option value="Divorciado">Divorciado</option>
-			</select><br>
-		Sexo..... <input type="radio" name="sexo" value="male" />Masculino
-				  <input type="radio" name="sexo" value="female" />Feminino <br>
+		<div class="div">
+			<div class="divNomes">Nome</div>
+			<div class="divInputs">
+				<input type="text" name="nome" size="60" placeholder="Informe seu nome" required />
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">Data de Nascimento </div>
+			<div class="divInputs">
+				<input type="date" style="width:487px" name="nasc"  /></div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">Estado Civil </div>
+			<div class="divInputs">
+				<select name="ec" style="width:490px">
+					<option selected value="">Informe o estado Civil</option>
+					<option value="Solteiro">Solteiro</option>
+					<option value="Casado">Casado</option>
+					<option value="Viúvo">Viúvo</option>
+					<option value="Divorciado">Divorciado</option>
+				</select>
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">Sexo </div>
+			<div class="divInputs">
+				<input type="radio" name="sexo" value="male" />Masculino
+				<input type="radio" name="sexo" value="female" />Feminino
+			</div>
+		</div><br><br>
+
 		<h3>2. Objetivo</h3>
-		<textarea name="objetivo" cols="100" rows="5" placeholder="Digite seu objetivo" required></textarea><br>
+		<div class="div">
+			<div class="Objetivo">Objetivo </div>
+			<div class="Objetivo_In">
+				<textarea name="objetivo" cols="59" rows="5" placeholder="Digite seu objetivo" required></textarea>
+			</div>
+		</div><br><br><br><br><br>
 		<h3>3. Contato</h3>
-		Endereço......: <input type="text" name="Endereço" placeholder="Digite seuendereço" required><br>
-		Cidade/Estado......:<input type="text" name="Cidade" placeholder="Digite sua Cidade" required>/
-							<input type="text" name="Estado" placeholder="Digite sua Estado" required><br>
-		CEP.........: <input type="text"  name="CEP" required placeholder="Digite o CEP no formato 99999-99" pattern="[0-9]{5}[\-][0-9]{3}"/><br> 
-		Telefone......<input type="tel" required name="tel" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" /><br>
-		Email.........: <input type="email" name="email" required placeholder="Informe um email válido" /><br> 
-		Rede Social..........: <input type="url" name="facebook" pattern="http://www.+\..+" placeholder="Perfil Facebook"/><br>
-								<input type="url" name="linkedin" pattern="http://www.+\..+" placeholder="Perfil Linkedin"/><br>
-								<input type="url" name="Skype" pattern="http://www.+\..+" placeholder="Perfil Skype"/><br>
+		<div class="div">
+			<div class="divNomes">Endereço </div>
+			<div class="divInputs">
+				<input type="text" name="Endereço" size="60" placeholder="Digite seu endereço" required>
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">Cidade/Estado</div>
+			<div class="divInputs">
+				<input type="text" name="Cidade" size="28" placeholder="Digite sua Cidade" required>/
+				<input type="text" name="Estado" size="28" placeholder="Digite sua Estado" required>
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">CEP</div>
+			<div class="divInputs">
+				<input type="text"  name="CEP" size="60" required placeholder="Digite o CEP no formato 99999-99" pattern="[0-9]{5}[\-][0-9]{3}"/>
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">Telefone</div>
+			<div class="divInputs">
+				<input type="tel" size="60" placeholder="Digite seu telefone no formato (99) 9999-9999" required name="tel" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" />
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="divNomes">Email</div>
+			<div class="divInputs">
+				<input type="email" size="60" name="email" required placeholder="Informe um email válido" />
+			</div>
+		</div><br><br>
+		<div class="div">
+			<div class="Rs_Nome">Rede Social</div>
+			<div class="Rs_Input">
+				<img src="face.png">http://facebook.com/
+				<input type="url" size="33" name="facebook" pattern="http://www.+\..+" placeholder="Perfil Facebook"/><br>
+				<img src="linkedin.png">http://linkedin.com/
+				<input type="url" size="33" name="linkedin" pattern="http://www.+\..+" placeholder="Perfil Linkedin"/><br>
+				<img src="skype.png"><input type="url" size="33" name="Skype" pattern="http://www.+\..+" placeholder="Perfil Skype"/><br>
+			</div>
+		</div><br><br><br><br><br>
+		
 		<h3>4. Conhecimentos</h3>
-		Linguagens de Programaçao <input type="checkbox" name="C/C++" value="C/C++"> C/C++<br>
-		<input type="checkbox" name="Java" value="Java">Java <br>
-		<input type="checkbox" name="Virtual Basic" value="VB"> Virtual Basic<br>
-		<input type="checkbox" name=".Net" value=".Net"> .Net<br>
-		<input type="checkbox" name="PHP" value="PHP">PHP <br>
-		<input type="checkbox" name="Python" value="Python"> Python<br>
-		<input type="checkbox" name="Html" value="Html"> Html<br>
-		Idiomas  Inglês <select name="Ingles" >
-				<option selected value="">Nivel</option>
-				<option value="basico">basico</option>
-				<option value="Intermediario">Intermediario</option>
-				<option value="Avançado">Avançado</option> 
-				</select>|
-		Espanhol <select name="Espanhol" >
-				<option selected value="">Nivel</option>
-				<option value="basico">basico</option>
-				<option value="Intermediario">Intermediario</option>
-				<option value="Avançado">Avançado</option>
-				</select><br>
-		<input type="reset" value="Limpar" /> |
-		<input type="submit" value="Submit" />
+		<div class="div">
+			<div class="LP_nome">Linguagens de Programaçao</div>
+			<div class="LP_Input">
+				<input type="checkbox" name="C/C++" value="C/C++">C/C++<br>
+				<input type="checkbox" name="Java" value="Java">Java <br>
+				<input type="checkbox" name="Virtual Basic" value="VB">Virtual Basic<br>
+				<input type="checkbox" name=".Net" value=".Net">.Net<br>
+				<input type="checkbox" name="PHP" value="PHP">PHP <br>
+				<input type="checkbox" name="Python" value="Python">Python<br>
+				<input type="checkbox" name="Html" value="Html">Html<br>
+			</div>
+		</div><br><br><br><br><br><br><br><br><br>
+		<div class="div">
+			<div class="divNomes">Idiomas </div>
+			<div class="divInputs">
+				Inglês <select name="Ingles" >
+							<option selected value="">Nivel</option>
+							<option value="basico">basico</option>
+							<option value="Intermediario">Intermediario</option>
+							<option value="Avançado">Avançado</option> 
+						</select>|
+				Espanhol <select name="Espanhol" >
+							<option selected value="">Nivel</option>
+							<option value="basico">basico</option>
+							<option value="Intermediario">Intermediario</option>
+							<option value="Avançado">Avançado</option>
+						</select>
+			</div>
+		</div><br><br>
+		
+		<input type="reset" value="Limpar"  class="botao"/> |
+		<input type="submit" value="Submit" class="botao"/>
 
 	</form>
+
+
 </body>
 
 </html>
