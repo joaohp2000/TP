@@ -52,32 +52,32 @@
 		</div><br><br><br><br><br>
 		<h3>3. Contato</h3>
 		<div class="div">
-			<div class="divNomes">Endereço </div>
+			<div class="divNomes2">Endereço </div>
 			<div class="divInputs">
 				<input type="text" name="Endereço" size="60" placeholder="Digite seu endereço" required>
-			</div>
+			</div> 
 		</div><br><br>
 		<div class="div">
-			<div class="divNomes">Cidade/Estado</div>
+			<div class="divNomes2">Cidade/Estado</div>
 			<div class="divInputs">
 				<input type="text" name="Cidade" size="28" placeholder="Digite sua Cidade" required>/
-				<input type="text" name="Estado" size="28" placeholder="Digite sua Estado" required>
+				<input type="text" name="Estado" size="28" maxlength="2" placeholder="Digite sua Estado" required pattern="[A-Z]{2}">
 			</div>
 		</div><br><br>
 		<div class="div">
-			<div class="divNomes">CEP</div>
+			<div class="divNomes2">CEP</div>
 			<div class="divInputs">
-				<input type="text"  name="CEP" size="60" required placeholder="Digite o CEP no formato 99999-99" pattern="[0-9]{5}[\-][0-9]{3}"/>
+				<input type="text"  name="CEP" size="60"  required placeholder="Digite o CEP no formato 99999-99" pattern="[0-9]{5}[\-][0-9]{3}"/>
 			</div>
 		</div><br><br>
 		<div class="div">
-			<div class="divNomes">Telefone</div>
+			<div class="divNomes2">Telefone</div>
 			<div class="divInputs">
 				<input type="tel" size="60" placeholder="Digite seu telefone no formato (99) 9999-9999" required name="tel" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" />
 			</div>
 		</div><br><br>
 		<div class="div">
-			<div class="divNomes">Email</div>
+			<div class="divNomes2">Email</div>
 			<div class="divInputs">
 				<input type="email" size="60" name="email" required placeholder="Informe um email válido" />
 			</div>
@@ -107,8 +107,8 @@
 			</div>
 		</div><br><br><br><br><br><br><br><br><br>
 		<div class="div">
-			<div class="divNomes">Idiomas </div>
-			<div class="divInputs">
+			<div class="divNomes3">Idiomas </div>
+			<div class="divInputs3">
 				Inglês <select name="Ingles" >
 							<option selected value="">Nivel</option>
 							<option value="basico">basico</option>
