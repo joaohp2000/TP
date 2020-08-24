@@ -2,15 +2,17 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width">
 	<title> Formulário </title>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
  
-<body>
+<body> 
+	<div class="container">
 	<h1>Cadastre seu Currículo</h1>
 	
-	<form name="formulario">
+	<form name="formulario" class="form">
 		<h3>1. Dados Pessoais</h3>
 		<div class="div">
 			<div class="divNomes">Nome</div>
@@ -53,32 +55,32 @@
 		<h3>3. Contato</h3>
 		<div class="div">
 			<div class="divNomes2">Endereço </div>
-			<div class="divInputs">
+			<div class="divInputs2">
 				<input type="text" name="Endereço" size="60" placeholder="Digite seu endereço" required>
 			</div> 
 		</div><br><br>
 		<div class="div">
 			<div class="divNomes2">Cidade/Estado</div>
-			<div class="divInputs">
+			<div class="divInputs2">
 				<input type="text" name="Cidade" size="28" placeholder="Digite sua Cidade" required>/
 				<input type="text" name="Estado" size="28" maxlength="2" placeholder="Digite sua Estado" required pattern="[A-Z]{2}">
 			</div>
 		</div><br><br>
 		<div class="div">
 			<div class="divNomes2">CEP</div>
-			<div class="divInputs">
+			<div class="divInputs2">
 				<input type="text"  name="CEP" size="60"  required placeholder="Digite o CEP no formato 99999-99" pattern="[0-9]{5}[\-][0-9]{3}"/>
 			</div>
 		</div><br><br>
 		<div class="div">
 			<div class="divNomes2">Telefone</div>
-			<div class="divInputs">
+			<div class="divInputs2">
 				<input type="tel" size="60" placeholder="Digite seu telefone no formato (99) 9999-9999" required name="tel" pattern="[\(][0-9]{2}[\)][\s][0-9]{4}[\-][0-9]{4}" />
 			</div>
 		</div><br><br>
 		<div class="div">
 			<div class="divNomes2">Email</div>
-			<div class="divInputs">
+			<div class="divInputs2">
 				<input type="email" size="60" name="email" required placeholder="Informe um email válido" />
 			</div>
 		</div><br><br>
@@ -129,7 +131,7 @@
 
 	</form>
 
-
+</div>
 </body>
 
 </html>

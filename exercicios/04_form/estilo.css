@@ -3,10 +3,12 @@
     font-family: Courier New, Courier, monospace;
 }
 h3{
+    font-size:1.5em;
     color:rgb(10, 13, 27);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1{
+    font-size:2em;
     color:rgb(10, 13, 27);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -26,6 +28,10 @@ input:required:valid {
     background-repeat: no-repeat;
     background-position:right
 }
+.container{
+    width: 67.5%;
+    
+}
 
 .divNomes{
 color:white;
@@ -37,6 +43,8 @@ height:25px;
 background:rgb(78, 103, 174);
 left:00px;
 top:00px;
+border:1px solid;
+
 }
 
 .divInputs{
@@ -46,6 +54,7 @@ top:00px;
     background:rgba(78, 104, 174, 0.800);
     left:252px;
     top:00px;
+    
     }
 
 div.Objetivo{
@@ -58,9 +67,11 @@ div.Objetivo{
     background:rgb(94, 117, 184);
     left:00px;
     top:00px;
+    
     }
 
 div.Objetivo_In{
+    
     position:absolute;
     width:500px;
     height:90px;
@@ -158,5 +169,10 @@ top:00px;
 
 .div{
 position:absolute;
+width:75%;
 
+}
+.form{
+    
+    width:100%;
 }
