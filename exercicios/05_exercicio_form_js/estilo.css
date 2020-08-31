@@ -1,0 +1,125 @@
+
+
+* {
+    font-family: Courier New, Courier, monospace;
+}
+h3{
+    font-size:1.5em;
+    color:rgb(10, 13, 27);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size:2em;
+    color:rgb(10, 13, 27);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.botao{
+    background:rgb(84, 114, 247);
+    color:white;
+
+}
+
+input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
+    background: url("./imagens/wrong.gif") no-repeat;
+    background-position: right;
+    background-color: white;
+} 
+
+input:required:valid, textarea:required:valid { 
+    background: url("./imagens/check.png") no-repeat;
+    background-position: right;
+    background-color: white;
+} 
+
+   
+
+
+table{
+    text-align: left;
+    align-items: center;
+    width: 72%;
+    
+}
+
+.input_nomes{
+    background-color:rgb(78, 103, 174);
+    width:40%;
+    font-size:calc(1em+1vw);
+    color: white;
+    text-align:left;
+    font-weight: bold;
+}
+
+.input_formulario{
+    background-color:rgb(78, 103, 174,0.800);
+    width:40%;
+    font-size:calc(1em+1vw);
+   
+    text-align: left;
+}
+
+.input2_nomes{
+    background-color:rgb(94, 117, 184);
+    width:40%;
+    font-size:calc(1em+1vw);
+    color: white;
+    text-align:left;
+    font-weight: bold;
+}
+
+.input2_formulario{
+    background-color:rgba(94, 117, 184, 0.800);
+    width:40%;
+    font-size:calc(1em+1vw);
+   
+    text-align: left;
+}
+
+.input3_nomes{
+    background-color:rgb(121, 144, 200);
+    width:40%;
+    font-size:calc(1em+1vw);
+    color: white;
+    text-align:left;
+    font-weight: bold;
+}
+
+.input3_formulario{
+    background-color:rgba(121, 144, 200, 0.800);
+    width:40%;
+    font-size:calc(1em+1vw);
+   
+    text-align: left;
+}
+
+.input4_nomes{
+    background-color:rgb(155, 173, 217);
+    width:40%;
+    font-size:calc(1em+1vw);
+    color: white;
+    text-align:left;
+    font-weight: bold;
+}
+
+.input4_formulario{
+    background-color:rgba(155, 173, 217,0.800);
+    width:40%;
+    font-size:calc(1em+1vw);
+   
+    text-align: left;
+}
+
+
+.input{
+    width: 90%;
+    
+}
+
+
+textarea{
+    resize: none;
+}
+#invalido{
+    color:red;
+    font-size:calc(0.7em);
+}
