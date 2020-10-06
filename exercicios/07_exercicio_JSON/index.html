@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="public/css/.css" rel="stylesheet">-->
+    <!--JQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="quiz.json" charset="utf-8"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Quiz</title>
+
+   
+</head>
+<body onload="nextQuestion()">
+    <div id="corpo">
+        <div id="jogo">
+            <div class="row">
+                <div class="col-lg-4 col-12"></div>
+                <div class="col-lg-4 col-12">
+                        <h3 style="text-align: center">Qual o nome desse presidente?</h3>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="col-12 text-center font-weight-bold "  style="padding-top: 0.8rem;"><span id="rodada"></span> </div>
+                    <div class="col-12 text-center font-weight-bold " style="padding-top: 0.8rem;"> <span id="pontos"></span> </div>
+                </div>
+            </div>       
+            <div class="row">
+                <div class="col-12 text-center" id="displayText" style="padding: 3rem 0;"></div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    
+                    <div id="divres1" class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+                        <a id="res1" class="btn btn-dark btn-block text-light" onclick="escolha('res1')"></a>
+                    </div>
+
+                    <div class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+                        <a id="res2" class="btn btn-dark btn-block text-light" onclick="escolha('res2')"></a>
+                    </div>
+
+                    <div class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+                        <a id="res3" class="btn btn-dark btn-block text-light" onclick="escolha('res3')"></a>
+                    </div>
+
+                    <div class="col-lg-6 col-12" style="padding: 1.2rem 3rem;">
+                        <a id="res4" class="btn btn-dark btn-block text-light" onclick="escolha('res4')"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

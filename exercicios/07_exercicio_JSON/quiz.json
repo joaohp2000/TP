@@ -1,0 +1,89 @@
+var presidentes = [{
+    "nome": "collor",
+    "link": "imagens/collor.jpeg",
+    "resposta": "res1",
+    "res1": "Fernando collor de Melo",
+    "res2": "Eurico Gaspar Dutra",
+    "res3": "José Sarney",
+    "res4": "Tancredo Neves"
+}, {
+    "nome": "sarney",
+    "link": "imagens/jose_sarney.jpeg",
+    "resposta": "res2",
+    "res1": "Ruy Mauro Marini",
+    "res2": "José Sarney",
+    "res3": "Anísio Teixeira",
+    "res4": "Tancredo Neves"
+}, {
+    "nome": "costa e silva",
+    "link": "imagens/costa_e_silva.jpeg",
+    "resposta": "res3",
+    "res3": "Costa e Silva",
+    "res2": "Chico Buarque",
+    "res1": "Cascão",
+    "res4": "Michael Temer"
+}, {
+    "nome": "dilma",
+    "link": "imagens/dilma.jpeg",
+    "resposta": "res4",
+    "res1": "Elis Regina",
+    "res2": "Vania Bambirra",
+    "res3": "Magali",
+    "res4": "Dilma"
+}, {
+    "nome": "juscelino jub",
+    "link": "imagens/juscelino_kub.jpeg",
+    "resposta": "res3",
+    "res1": "João Goulart",
+    "res2": "Janio Quadros",
+    "res3": "Juscelino kubitschek",
+    "res4": "Joao Figueiredo"
+}, {
+    "nome": "janio_quadros",
+    "link": "imagens/janio_quadros.jpeg",
+    "resposta": "res2",
+    "res2": "Janio Quadros",
+    "res1": "Castelo Branco",
+    "res3": "João Figueiredo",
+    "res4": "Aecio Neves"
+}, {
+    "nome": "joao goulart",
+    "link": "imagens/joao_goulart.jpeg",
+    "resposta": "res1",
+    "res3": "Leonel Brizola",
+    "res2": "Ricardo Antunes",
+    "res1": "Joao Goulart",
+    "res4": "Darcy Ribeiro"
+}, {
+    "nome": "castelo branco",
+    "link": "imagens/castelo_branco.jpeg",
+    "resposta": "res1",
+    "res1": "Castelo Branco",
+    "res2": "Médice",
+    "res3": "João Figueiredo",
+    "res4": "Eurico Gaspar Dutra"
+}, {
+    "nome": "fhc",
+    "link": "imagens/fhc.jpeg",
+    "resposta": "res1",
+    "res1": "Fernando Henrique Cardoso",
+    "res2": "Fernando Collor de Melo",
+    "res3": "Caio Prado Jr",
+    "res4": "Sergio Buarque"
+}, {
+    "nome": "lula",
+    "link": "imagens/lula.jpeg",
+    "resposta": "res1",
+    "res1": "Lula",
+    "res2": "Ayrton Senna",
+    "res3": "Rodrigo Maia",
+    "res4": "Renan Calheiros"
+}, {
+    "nome": "getulio",
+    "link": "imagens/getulio_vargas.jpeg",
+    "resposta": "res1",
+    "res1": "Getúlio Vargas",
+    "res2": "Lula",
+    "res3": "Janio Quadros",
+    "res4": "Tancredo Neves"
+}];
