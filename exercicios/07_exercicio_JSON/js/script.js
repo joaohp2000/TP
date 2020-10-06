@@ -1,10 +1,7 @@
 var perguntaAtual = 0;
-var numElemento = 0;
-var resultado;
 var rodada=0;
 function nextQuestion() {
-    var teste;
-    var rodadas;
+
     
     document.getElementById('rodada').innerHTML = "Rodada " + (rodada+1) + "/10";
     document.getElementById('pontos').innerHTML = "Pontuação " + (pontuacao) + "/10";
@@ -19,7 +16,6 @@ function nextQuestion() {
 
    
     perguntaAtual = aleatorio;
-    numElemento++;
 
   
     document.getElementById('displayText').innerHTML = "<img class=" + "borda" + " src=" + presidentes[perguntaAtual].link + " height=" + "275px >";
@@ -43,13 +39,13 @@ function escolha(id) {
         
         document.getElementById('pontos').innerHTML = "Pontuação " + (pontuacao) + "/10";
         document.getElementById(id).className="btn btn-success btn-block text-light";
-        setTimeout(() => { verifica(id,resposta); }, 1000);
+        setTimeout(() => { verifica(id,resposta); }, 700);
         pontuacao++;
     }
     else{
         document.getElementById(id).className="btn btn-danger btn-block text-light";
         document.getElementById(resposta).className="btn btn-success btn-block text-light";
-        setTimeout(() => { verifica(id,resposta); }, 1000);
+        setTimeout(() => { verifica(id,resposta); }, 700);
     }
 }
 
